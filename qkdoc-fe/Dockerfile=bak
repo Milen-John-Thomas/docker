@@ -1,0 +1,24 @@
+FROM alpine:3.7
+
+RUN apk add --update \
+    python  \
+    python-dev  \
+    py-pip  \
+    nginx  \
+    gcc \
+    py-mysqldb \
+    py-setuptools  \
+    musl-dev \
+    py-gunicorn \
+    bash
+
+#RUN mkdir -p /opt/requirements/
+#ADD docker-deps/requirements.txt /opt/requirements/
+#RUN pip install -r /opt/requirements/requirements.txt
+
+#ADD docker-deps/nginx/nginx.conf /etc/nginx/nginx.conf
+#ADD docker-deps/nginx/qkdoc_fe.conf /etc/nginx/conf.d/qkdoc_fe.conf
+
+#ADD docker-deps/gunicorn/gunicorn_qkdoc_fe.conf /etc/init/gunicorn_qkdoc_fe.conf
+
+#ADD mm-qkdocmma /var/www/
