@@ -1,0 +1,108 @@
+export IMAGE_UPLOAD_FILE_MAX_SIZE=3*1024*1024
+export PASSWORD_RESET_INTERVAL=2
+export CONVENIENCE_FEE=10
+
+export PATIENT_API_URL="https://api.qkdoc.com/patients/"
+export CLINIC_WEB_API_URL="https://api.qkdoc.com/clinic_web_api"
+export DOCTOR_WEB_API_URL="https://api.qkdoc.com/doctor_web_api"
+export DOMAIN_NAME="https://clinicadmin.qkdoc.com"
+
+export CLINIC_DEF_IMAGE="clinic_logo/default_clinic_logo.png"
+export DOCTOR_MALE_DEF_IMAGE="doctor_profile/doctor_male.jpg"
+export DOCTOR_FEMALE_DEF_IMAGE="doctor_profile/doctor_female.jpg"
+export PATIENT_DEF_IMAGE=""
+export STAFF_DEF_IMAGE=""
+export CLINIC_WEB_URL="https://clinicadmin.qkdoc.com/clinic"
+export EXCEL_UPLOAD_URL="https://clinicadmin.qkdoc.com/media/"
+
+export DEBUG=False
+export TEMPLATE_DEBUG=True
+
+export GCM_APIKEY="AIzaSyB8tmbk3T8R3DnIkHyLl1qttxIyB6t98ec"
+
+export DATABASE_NAME="qk_doc_api"
+export DATABASE_USER="qk_doc"
+export DATABASE_PASSWORD="Vig2mccB7u+1pw=="
+export DATABASE_HOST="qk-doc.cluster-c1ni3q7dzsun.eu-west-1.rds.amazonaws.com"
+export DATABASE_PORT="3306"
+
+export RQ_QUEUES_HOST="qk-doc.ewjztu.ng.0001.euw1.cache.amazonaws.com"
+export RQ_QUEUES_PORT=6379
+export RQ_QUEUES_DB=0
+export RQ_QUEUES_PASSWORD=""
+export RQ_QUEUES_DEFAULT_TIMEOUT=360
+
+export EMAIL_USE_TLS=False
+export EMAIL_HOST="email-smtp.eu-west-1.amazonaws.com"
+export EMAIL_PORT=587
+#export EMAIL_HOST_USER="AKIAIYKDAHYUT3TPSVUA"
+#export EMAIL_HOST_PASSWORD="AqGzNCqY7vFV7EaufnGHzHadw8opH/Ivpc8ioVCLS4Kg"
+export DEFAULT_FROM_EMAIL="QKDoc <noreply@qkdoc.com>"
+
+export BASE_URL="https://clinicadmin.qkdoc.com/"
+
+export DEFAULT_FILE_STORAGE="storages.backends.s3boto.S3BotoStorage"
+export AWS_QUERYSTRING_AUTH=False     # don't add complex authentication-related query parameters for requests
+#export AWS_S3_ACCESS_KEY_ID="AKIAJLIYYPETJIEXMS3Q"     # enter your access key id
+#export AWS_S3_SECRET_ACCESS_KEY="Uhuf7HStjubHoedAzB/UDLk1HYXlC21reGKx41wX" # enter your secret access key
+export AWS_STORAGE_BUCKET_NAME="qk-doc"
+
+
+
+export DATAMATE_URL="http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx?WSDL"
+export DATAMATE_API_KEY='4e8c215ceb488da212472795e6d786c0'
+export DATAMATE_USERNAME='MMQK'
+export DATETIME_USERNAME='MMQK'
+export DATAMATE_URL_CREATE_APPOINTMENT='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/CreateAppointment'
+export DATAMATE_URL_CANCEL_APPOINTMENT='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/CancelAppointment'
+export DATAMATE_URL_CREATE_PORTAL_USER='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/CreatePortalUserAPI'
+export DATAMATE_URL_MRD_VALIDATION='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/PatientMRDValidation'
+export DATAMATE_API_KEY_EMC='5437f86ecaacdeaa19718654029de4d1'
+export DATETIME_USERNAME_EMC='MMEMC'
+
+export ASTER_GET_AVAILABILITY='http://111.93.231.242:5512/Service1.svc/GetDoctorWiseSlot/{APPOINTMENTDATE}/{DOCTORID}/{FACILITYID}'
+export ASTER_GET_PATIENT_DETAILS='http://111.93.231.242:5512/Service1.svc/GetPatientDetails/{HOSPITALLOCATIONID}/{FACILITYID}/{REGISTRATIONNO}'
+export ASTER_CREATE_APPOINTMENT='http://111.93.231.242:5512/Service1.svc/SaveAppointment/{APPOINTMENTDATE}/{APPFROMTIME}/{APPTOTIME}/{DOCTORID}/{VISITTYPEID}/{REGISTRATIONNO}/{TITLEID}/{FULLNAME}/{DOB}/{AGEYEAR}/{AGEMONTH}/{AGEDAY}/{GENDER}/{REMARKS}/{MOBILE}/{EMAIL}/{FACILITYID}/{PAYMENTMODEID}/{AUTHORIZATIONNO}/{PACKAGEID}'
+export ASTER_CREATE_PORTAL_USER='http://111.93.231.242:5512/Service1.svc/SaveRegistration/{FACILITYID}/{TITLE}/{FULLNAME}/{DISPLAYNAME}/{DATEOFBIRTH}/{AGEYEAR}/{AGEMONTH}/{AGEDAYS}/{SEX}/{LOCALADDRESS}/{LOCALADDRESSLINE2}/{LOCALPIN}/{LOCALCITY}/{LOCALSTATE}/{LOCALCOUNTRY}/{EMAIL}/{MOBILENO}/{REFERRALID}'
+
+export iWARE_URL='http://61.0.253.58:8130/HISkkdSrvMain.svc?wsdl'
+export DATAMATE_URL_BLOCK_APPOINTMENT='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/CreateBlockedAppointment'
+export DATAMATE_URL_UPDATE_APPOINTMENT='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/UpdateAppointment'
+export DATAMATE_URL_MRD_DOB_VALIDATION='http://internal-qk-doc-windows-api-ielb-117827010.eu-west-1.elb.amazonaws.com/Live/MediwareCAPI.asmx/MRDValidationWithDOBOrMobileNo'
+
+
+export DATAMATE_API_KEY_EMC='5437f86ecaacdeaa19718654029de4d1'
+export DATAMATE_USERNAME_EMC='MMEMC'
+
+export CITRUS_ACCESS_KEY='L7F0Y2Y68TJJY354SWP9'
+export CITRUS_SECRET_KEY='9552e06e0fa8ef6de3988caa11b5c8d20caf3d00'
+export CITRUS_SIGN_UP_ID='egdhsgr34b-signup'
+export CITRUS_SIGN_IN_ID='egdhsgr34b-signin'
+export CITRUS_SIGN_UP_SECRET='c327215783f21c08ba373033722eee74'
+export CITRUS_SIGN_IN_SECRET='4b814c58dbde20faa04a7bdca7ecff24'
+export CITRUS_VANITY='egdhsgr34b'
+export CITRUS_WALLET='https://api.qkdoc.com/patients/update-wallet/'
+export CITRUS_SANDBOX_RETURNURL="https://api.qkdoc.com/patients/update-payment-info-testing/"
+export CITRUS_SANDBOX_BILLGENERATOR_URL="https://api.qkdoc.com/patients/citrus-bill-generator/"
+
+export MEDIA_ROOT="https://static.qkdoc.com/"
+export MEDIA_URL="https://static.qkdoc.com/"
+export AWS_S3_SECURE_URLS=True
+export S3_URL="https://static.qkdoc.com/"
+
+
+export OTP_API_URL='https://api.qkdoc.com/otp'
+export CITRUS_RETURN_URL='https://www.qkdoc.com/update-payment/'
+
+export DATAMATE_URL_UPDATE_VISIT_DETAILS="http://52.17.26.165/Live/MediwareCAPI.asmx/GetVisitDetails"
+export QKDOC_SUPPORT_MOB="917012612323"
+
+export ERROR_EMAIL_NOTIFIERS="sarath.sankar@in.theory-y.com,anvin.johnson@in.theory-y.com"
+export INFO_EMAIL_NOTIFIERS="ajil.jose@theory-y.com"
+export QK_INFO_EMAIL_NOTIFIERS="sarath.sankar@in.theory-y.com,support@qkdoc.com"
+export EMAIL_USE_TLS=False
+export EMAIL_HOST="email-smtp.eu-west-1.amazonaws.com"
+export EMAIL_PORT=587
+export DEFAULT_FROM_EMAIL="QKDoc <no-reply@qkdoc.com>"
+export AWS_SES_REGION_NAME="eu-west-1"
+export AWS_SES_REGION_ENDPOINT="email.eu-west-1.amazonaws.com"
