@@ -1,7 +1,7 @@
 BeautifulSoup==3.2.1
 boto==2.39.0
 click==5.1
-Django==1.7.9
+Django==1.11.28
 django-audit-log==0.7.0
 django-auditlog==0.3.3
 django-chartit==0.1
