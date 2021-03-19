@@ -15,7 +15,7 @@ django-rq==0.8.0
 django-social-share==0.3.0
 django-storages==1.1.8
 django-tastypie==0.13.0
-djangorestframework==3.2.4
+djangorestframework==3.11.2
 elasticsearch==2.2.0
 funcsigs==0.4
 futures==3.0.5
